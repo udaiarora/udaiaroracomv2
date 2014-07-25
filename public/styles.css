@@ -1,4 +1,104 @@
-.aa {
-    	-webkit-transform:rotate(7deg);
-    	transform:rotate(7deg);
-    }
+
+html {
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+	/*height: 2000px;/**/
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.inline {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.center {
+	text-align: center;
+}
+
+.spcl-text {
+	background: rgba(20,20,20,0.7);
+}
+
+.cast-shadow {
+	-webkit-box-shadow: 0px 7px 10px #222, 0px -7px 10px #222;
+	-moz-box-shadow: 0px 7px 10px #222, 0px -7px 10px #222;
+	box-shadow: 0px 7px 10px #222, 0px -7px 10px #222;
+}
+
+
+
+.main-content {
+	height: 100%;
+}
+
+.intro-section {
+	height: 1050px;
+}
+
+
+.avatar-holder {
+	height: 280px;
+	width: 280px;
+}
+
+.avatar {
+	-moz-border-radius: 50% 50% 50% 50%;
+	-webkit-border-radius: 50% 50% 50% 50%;
+	border-radius: 50% 50% 50% 50%;
+	height: 280px;
+	width: 280px;
+}
+
+.intro-section .back {
+	background: url("img/dark_designer-2560x1600.jpg");
+	-webkit-background-size: cover cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 1050px;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+}
+
+.intro-section .blurred {
+	background: url("img/dark_designer-2560x1600_blurred.jpg");
+	-webkit-background-size: cover cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 1050px;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+
+}
+
+.intro-section .content{
+	font-size: 4.5em;
+	color: #ffffff;
+	height: 1050px;
+	padding: 40px 0px 40px 10%;
+}
+
+.intro-section .fixed-then-move {
+	position: fixed;
+	width: 90%; 
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+#head-text {
+	position: absolute;
+	top: 200px;
+}
