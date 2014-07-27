@@ -1,3 +1,14 @@
+
+
+$(window).load(function(){
+	$(".foo").fadeOut(500, function(){
+		//$("html").niceScroll({scrollspeed : "100", autohidemode : false});
+	});
+	$(".main-content").css({"visibility":"visible"});
+});
+
+
+
 $(document).ready(function(){
 	(function($){
 		$(window).load(function(){
@@ -27,7 +38,7 @@ $(document).ready(function(){
 	})(jQuery);
 	$(document).scroll(function() {
 		var distFromTop=$(this).scrollTop();
-		$('.blurred').css('opacity', distFromTop/500);
+		$('.blurred').css('opacity', distFromTop/250);
 		if( distFromTop <= 300 ) {
 
 			$('#head-text').css({top:distFromTop+200});
@@ -39,3 +50,5 @@ $(document).ready(function(){
 	});
 
 })
+
+
