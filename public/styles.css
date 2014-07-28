@@ -222,6 +222,12 @@ a:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/firstBG.jpeg',sizingMethod='scale')";
 }
 
+
+canvas#tagCanvas {
+	width: 400px;
+	height: 200px;
+}
+
 #third{
 	background: #000 50% 0 no-repeat fixed;
 	height: 400px;
@@ -240,27 +246,7 @@ a:hover {
 	width: 100%;
 	z-index: 0;
 }
-/*
-#third .bg2{
-	background: url(img/contacts2.gif) 0% 0 no-repeat fixed;
-	height: 400px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 100%;
-	z-index: 0;
-}
 
-#third .bg3{
-	background: url(img/contacts3.gif) 0% 0 no-repeat fixed;
-	height: 400px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 100%;
-	z-index: 0;
-}
-*/
 .story{
 	margin: 0 auto;
 	/*min-width: 980px;*/
