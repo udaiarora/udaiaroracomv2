@@ -17,7 +17,7 @@ a {
 	text-decoration: none;
 	color: inherit;/*
 	font-weight: bold;*/
-	background: rgba(10,10,10,0.6);
+	background: rgba(10,10,10,0.5);
 }
 
 a:visited {
@@ -252,7 +252,7 @@ a:hover {
 canvas#tagCanvas {
 	width: 600px;
 	height: 300px;
-	background: #000;
+	background: ;
 }
 
 #third{
@@ -287,15 +287,15 @@ canvas#tagCanvas {
 }
 
 .detailed-content {
-	font-size: 21px;
+	font-size: 18px;
 	color: white;/*
 	height: 900px;*/
 	padding: 3% 20%;
-	line-height: 30px;
+	line-height: 24px;
 	position: relative;
-	-webkit-box-shadow: 0px 7px 10px #222, 0px -7px 10px #222;
+/*	-webkit-box-shadow: 0px 7px 10px #222, 0px -7px 10px #222;
 	-moz-box-shadow: 0px 7px 10px #222, 0px -7px 10px #222;
-	box-shadow: 0px 7px 10px #222, 0px -7px 10px #222;
+	box-shadow: 0px 7px 10px #222, 0px -7px 10px #222;*/
 	z-index: 2;
 }
 
@@ -307,7 +307,7 @@ canvas#tagCanvas {
 }
 
 .detailed-content .spin-text {
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 40px;
 	background: rgba(10,10,10,0.6);
 	padding: 10px;
@@ -355,7 +355,7 @@ canvas#tagCanvas {
 }
 
 .story-heading {
-	font-size: 100px;
+	font-size: 70px;
 	line-height: 100px ;
 	color: white;
 	background: rgba(20,20,20,0.7);
@@ -425,7 +425,7 @@ canvas#tagCanvas {
 
 .breath {  
 	-webkit-animation: breathe-head 500ms infinite both ease-in-out;  
--moz-animation: breathe-head 500ms infinite both ease-in-out;  
+	-moz-animation: breathe-head 500ms infinite both ease-in-out;  
 	-ms-animation: breathe-head 500ms infinite both ease-in-out;  
 	-o-animation: breathe-head 500ms infinite both ease-in-out;  
 }  
@@ -478,11 +478,13 @@ canvas#tagCanvas {
 	font-weight: bold;
 	margin-bottom: 10px;
 	font-size: 26px;
-	color: #000;
+	color: #fff;
+	padding: 10px;
+	background: #111;
 }
 
 .res-block .res-content {
-	font-size: 21px;
+	font-size: 18px;
 }
 
 
@@ -502,4 +504,113 @@ canvas#tagCanvas {
 
 .foo img {
 	margin: auto;
+}
+
+
+.card {
+	background: #eee;
+	color: #111;
+	padding: 20px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+
+.card img {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.card-title {
+	margin-bottom: 12px;
+	padding-bottom: 4px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dadada;
+}
+
+.card a{
+	background: rgba(200,200,200,0.5);
+}
+
+
+
+
+
+
+
+/*Skill Bar CSS*/
+
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.1s ;
+	-moz-transition:0.1s ;
+	-ms-transition:0.1s ;
+	-o-transition:0.1s ;
+	transition:0.1s ;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:160px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
 }

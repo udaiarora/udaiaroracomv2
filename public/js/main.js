@@ -1,6 +1,19 @@
 
 var anim_angle=360;
 var isRunning=false;
+var viewed=false;
+
+
+function isScrolledIntoView(elem)
+{
+	var docViewTop = $(window).scrollTop();
+	var docViewBottom = docViewTop + $(window).height();
+
+	var elemTop = $(elem).offset().top;
+	var elemBottom = elemTop + $(elem).height();
+
+	return ((elemBottom <= docViewBottom));//(elemBottom <= docViewBottom) &&
+}
 
 
 $(function() {
@@ -18,6 +31,8 @@ $(function() {
 	});
 });
 
+
+
 $(window).load(function(){
 	$(".foo").fadeOut(500, function(){
 		// $("html").niceScroll({scrollspeed : "100", autohidemode : false});
@@ -27,15 +42,29 @@ $(window).load(function(){
 
 
 
-$(document).ready(function(){
-	TagCanvas.Start('tagCanvas','tags',{
-		textColour: '#eee',
-		textHeight: 10,
-		noSelect: true,
-		outlineColour: '#555',
-		initial: [0.05,0.15],
-		maxSpeed: 0.1
+$(document).on("scroll", function(){
+	if(!viewed && isScrolledIntoView("#second")) {
+		viewed=true;
+		jQuery(document).ready(function(){
+		jQuery('.skillbar').each(function(){
+			jQuery(this).find('.skillbar-bar').animate({
+				width:jQuery(this).attr('data-percent')
+			},2000);
+		});
 	});
+	}
+});
+
+
+$(document).ready(function(){
+
+	// TagCanvas.Start('tagCanvas','tags',{
+	// 	textColour: '#fff',
+	// 	textHeight: 7,
+	// 	noSelect: true,
+	// 	initial: [0.05,0.15],
+	// 	maxSpeed: 0.1
+	// });
 
 
 
